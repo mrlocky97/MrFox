@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearPrincipalFox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.juansebastianquinayasguarin.mrfox.FoxFragment">
+
+    <LinearLayout
+        android:id="@+id/linearImgFox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgBosque"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:src="@drawable/forest" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLogoFox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearTextLogoFox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/logoLogin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:src="@drawable/fox" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MrFox"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBotonesFox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUninstallFox"
+                style="@style/botonAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Uninstall"
+                android:textColor="#216FED" />
+
+            <Button
+                android:id="@+id/btnUpdateFox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#216FED"
+                android:text="Update"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refrescarTexto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTextoLargoFox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Los pupilos de Pep Guardiola se pasearon en el feudo de su rival y, gracias a los goles de Bernardo Silva, David Silva y Leroy Sané, dieron un paso de gigante hacia el título e infligieron todavía más dolor en el cuestionado entrenador del Arsenal, Arsene Wenger.  Las adversas condiciones climáticas y las malas conexiones con trenes y metro, víctimas de la 'Tormenta Emma', desalentaron a los aficionados de los londinenses, que optaron por no ver en vivo el ridículo de su equipo y dejaron el Emirates Stadium con un desolador panorama de un tercio de entrada."
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/mensajeRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="lost tou FOX?"
+                android:textSize="24sp" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
